@@ -35,15 +35,7 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            // Clean up: Stop and remove the Docker container
-            script {
-                sh 'docker stop $(docker ps -q --filter ancestor=app:latest) || true'
-                sh 'docker rm $(docker ps -a -q --filter ancestor=app:latest) || true'
-            }
-        }
-    }
+   
 }
 
 
