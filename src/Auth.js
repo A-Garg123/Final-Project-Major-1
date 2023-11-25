@@ -44,7 +44,7 @@ export default function Auth() {
         <div className='auth-btn'>
 
             <Container fluid>
-                <h1 className='goog_text'>Sign In with Google</h1>
+                <h1 className='goog_text'>Sign In with Major Presentation</h1>
                 <GoogleButton className='goog'
                     type="dark" // can be light or dark
                     onClick={signUp}
